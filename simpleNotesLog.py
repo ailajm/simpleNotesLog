@@ -11,7 +11,7 @@ rts = time.ctime(ts)
 noteEntry = input("Enter notes here:")
 
 #Opens log file and writes user input to file
-log = open("C:\\Users\\Tailor Made Health\\Documents\\testyT.txt", "a+")
+log = open("path-to-log-file>>", "a+")
 log.write("\n")
 log.write(noteEntry)
 log.write("\n")
@@ -19,7 +19,7 @@ log.write(str(rts))
 log.close()
 
 #Prints updated log file for user to review
-log = open("C:\\Users\\Tailor Made Health\\Documents\\testyT.txt", "r")
+log = open("<<path-to-log-file>>", "r")
 print(log.read())
 log.close()
 
